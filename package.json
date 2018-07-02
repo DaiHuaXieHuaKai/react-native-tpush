@@ -1,0 +1,25 @@
+{
+  "name": "react-native-tpush",
+  "version": "1.0.0",
+  "description": "腾讯信鸽推送SDK封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaiHuaXieHuaKai/react-native-tpush.git"
+  },
+  "keywords": [
+    "tpush",
+    "react-native",
+    "tencent",
+    "XG"
+  ],
+  "author": "DaiHuaXieHuaKai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaiHuaXieHuaKai/react-native-tpush/issues"
+  },
+  "homepage": "https://github.com/DaiHuaXieHuaKai/react-native-tpush#readme"
+}
