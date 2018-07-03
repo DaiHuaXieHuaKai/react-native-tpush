@@ -13,10 +13,6 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        manifestPlaceholders = [
-                XG_ACCESS_ID:"",
-                XG_ACCESS_KEY : "",
-        ]
         ndk {
             abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
         }

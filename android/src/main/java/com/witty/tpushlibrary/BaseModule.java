@@ -16,7 +16,6 @@ public class BaseModule extends ReactContextBaseJavaModule {
     ReactApplicationContext context;
     public BaseModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        context = reactContext;
     }
 
     @Override
@@ -27,7 +26,7 @@ public class BaseModule extends ReactContextBaseJavaModule {
     /**
      * 传递消息给JS
      */
-    protected void sendEvent(String eventName, @Nullable WritableMap params) {
+    public void sendEvent(String eventName, @Nullable WritableMap params) {
         context
                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                 .emit(eventName, params);

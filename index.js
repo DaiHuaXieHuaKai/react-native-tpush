@@ -4,19 +4,16 @@ const { TPush } = NativeModules
 
 export default class XG {
 
-    enableDebug(debugMode) {
+    static enableDebug(debugMode) {
         TPush.enableDebug(debugMode)
     }
-
-   setAccessId(accessId) {
+    static setAccessId(accessId) {
         TPush.setAccessId(accessId)
     }
-
-   setAccessKey(accessKey) {
+    static setAccessKey(accessKey) {
         TPush.setAccessId(accessKey)
     }
-
-   getToken() {
+    static getToken() {
         return new Promise((resolve, reject) => {
             try {
                 TPush.getToken();
@@ -28,37 +25,36 @@ export default class XG {
             })
         })
     }
-
-   setReportNotificationStatusEnable(debugMode) {
+    static setReportNotificationStatusEnable(debugMode) {
         TPush.setAccessId(debugMode)
     }
-
-   setReportApplistEnable(debugMode) {
+    static setReportApplistEnable(debugMode) {
         TPush.setAccessId(debugMode)
     }
-
-   enableOtherPush(flag) {
+    static enableOtherPush(flag) {
         TPush.setAccessId(flag)
     }
-
-   setMiPushAppId(appid) {
+    static setMiPushAppId(appid) {
         TPush.setAccessId(appid)
     }
-
-   setMiPushAppKey(appkey) {
+    static setMiPushAppKey(appkey) {
         TPush.setAccessId(appkey)
     }
-
-    setMzPushAppId(appid) {
+    static setMzPushAppId(appid) {
         TPush.setAccessId(appid)
     }
-
-    setMzPushAppKey(appkey) {
+    static setMzPushAppKey(appkey) {
         TPush.setAccessId(appkey)
     }
-
-    setHuaweiDebug(isHuaweiDebug) {
+    static setHuaweiDebug(isHuaweiDebug) {
         TPush.setAccessId(isHuaweiDebug)
+    }
+    static registerPush(){
+        TPush.registerPush()
+    }
+
+    static registerPushCallback(){
+        TPush.registerPushCallback()
     }
 
 }
