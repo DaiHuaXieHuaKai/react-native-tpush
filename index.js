@@ -54,7 +54,16 @@ export default class XG {
     }
 
     static registerPushCallback(){
-        TPush.registerPushCallback()
+        return new Promise((resolve, reject) => {
+            try {
+                TPush.registerPushCallback()
+            } catch (e) {
+                reject(e)
+            }
+            DeviceEventEmitter.once("registerResult", res => {
+                resolve(res);
+            })
+        })
     }
 
 }
