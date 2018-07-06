@@ -10,7 +10,7 @@
   - [setAccessId](#setaccessid)
   - [setAccessKey](#setaccesskey)
   - [getToken](#gettoken)
-  - [setReportNotificationStatusEnable](#setreportnotificationstatusennable)
+  - [setReportNotificationStatusEnable](#setreportnotificationstatusenable)
   - [setReportApplistEnable](#setreportapplistenable)
   - [enableOtherPush](#enableotherpush)
   - [setMiPushAppId](#setmipushappid)
