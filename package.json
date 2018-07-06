@@ -1,6 +1,6 @@
 {
   "name": "react-native-tpush",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "腾讯信鸽推送SDK封装",
   "main": "index.js",
   "scripts": {
