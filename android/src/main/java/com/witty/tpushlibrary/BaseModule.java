@@ -13,9 +13,10 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 public class BaseModule extends ReactContextBaseJavaModule {
 
-    ReactApplicationContext context;
+    private static ReactApplicationContext context;
     public BaseModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        context = reactContext;
     }
 
     @Override
@@ -26,7 +27,7 @@ public class BaseModule extends ReactContextBaseJavaModule {
     /**
      * 传递消息给JS
      */
-    public void sendEvent(String eventName, @Nullable WritableMap params) {
+    protected static void sendEvent(String eventName, @Nullable WritableMap params) {
         context
                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                 .emit(eventName, params);

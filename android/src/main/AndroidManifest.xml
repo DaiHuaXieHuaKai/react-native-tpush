@@ -5,7 +5,7 @@
         android:supportsRtl="true">
 
         <!-- APP实现的Receiver，用于接收消息和结果反馈 -->
-        <receiver android:name="com.witty.tpushlibrary.TPushReceiver" >
+        <receiver android:name="com.witty.tpushlibrary.TPushModule$TPushReceiver" >
             <intent-filter>
                 <!-- 接收消息透传 -->
                 <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
