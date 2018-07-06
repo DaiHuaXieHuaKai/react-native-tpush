@@ -10,7 +10,7 @@
   - [setAccessId](#setaccessid)
   - [setAccessKey](#setaccesskey)
   - [getToken](#gettoken)
-  - [setReportNotificationStatusEnable](#setreportnotificationstatusnnable)
+  - [setReportNotificationStatusEnable](#setreportnotificationstatusennable)
   - [setReportApplistEnable](#setreportapplistenable)
   - [enableOtherPush](#enableotherpush)
   - [setMiPushAppId](#setmipushappid)
@@ -223,8 +223,9 @@ XG.registerPush()
 XG.registerPushCallback()
 ```
 
-#### registerPushAccountCallback（弃用，使用bindAccount）
+#### registerPushAccountCallback
 
+**（弃用，使用bindAccount）**
 
 注册设备并绑定账号，通过addRegisterResultListener回调。
 绑定账号注册指的是，在绑定设备注册的基础上，使用指定的账号（一个账号不能在多个设备登陆）注册APP，这样可以通过后台向指定的账号发送推送消息，有2个版本的API接口。
